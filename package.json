@@ -1,0 +1,22 @@
+{
+  "name": "tweteroo",
+  "version": "1.0.0",
+  "description": "An api built with JavaScript that allows you to post and receive messages in threads just like on Twitter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Leonardo de Souza Nunes",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
