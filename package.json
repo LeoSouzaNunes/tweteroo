@@ -1,11 +1,12 @@
 {
   "name": "tweteroo",
+  "type": "module",
   "version": "1.0.0",
   "description": "An api built with JavaScript that allows you to post and receive messages in threads just like on Twitter.",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon index.js"
+    "start": "npx nodemon ./api/index.js"
   },
   "keywords": [
     "api"
