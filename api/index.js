@@ -7,12 +7,11 @@ server.use(express.json())
 server.use(cors())
 
 server.get('/tweets', (req, res) => {
-    res.send(messageData)
+    res.send(messageData.slice(0, 10))
 })
 
 server.post('/sign-up', (req, res) => {
     userData.push(req.body)
-    console.log(userData.reverse())
     res.send('OK')
 })
 
@@ -22,7 +21,7 @@ server.post('/tweets', (req, res) => {
 
     const found = userData.find((data) => data.username === username)
 
-    messageData.push({ ...found, tweet })
+    messageData.unshift({ ...found, tweet })
     res.send('OK')
 })
 
